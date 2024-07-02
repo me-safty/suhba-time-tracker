@@ -1,0 +1,23 @@
+{
+  "name": "tracker-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && npm run start",
+    "start": "node dist/index.js",
+    "build": "esbuild index.js --bundle --outdir=dist --platform=node --target=node14 --format=cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sanity/client": "^6.20.1",
+    "express": "^4.19.2",
+    "node-telegram-bot-api": "^0.66.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "esbuild": "^0.23.0"
+  }
+}
